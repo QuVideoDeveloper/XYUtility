@@ -1,0 +1,16 @@
+PODS:
+  - XYUtility (0.1.0)
+
+DEPENDENCIES:
+  - XYUtility (from `../`)
+
+EXTERNAL SOURCES:
+  XYUtility:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XYUtility: 377accf2a007e08bc06bf939f30ca31c20728ffe
+
+PODFILE CHECKSUM: 2942e6e5a60d8163904079cf6d49b430332b9199
+
+COCOAPODS: 1.10.1

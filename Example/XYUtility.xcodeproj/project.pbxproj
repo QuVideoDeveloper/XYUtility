@@ -38,11 +38,11 @@
 
 /* Begin PBXFileReference section */
 		04EDA657B7648263A078CDD1 /* Pods_XYUtility_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYUtility_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		154DEDCD657D1816C11AC953 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		154DEDCD657D1816C11AC953 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		39654B88C11F604AABD65A14 /* Pods-XYUtility_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYUtility_Tests.release.xcconfig"; path = "Target Support Files/Pods-XYUtility_Tests/Pods-XYUtility_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3D245C54CBEC4FD62E645E91 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3D245C54CBEC4FD62E645E91 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3E9C79D5CE6AC2FE87A9F34C /* Pods_XYUtility_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYUtility_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50557DAD5E8D6936A0131084 /* XYUtility.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XYUtility.podspec; path = ../XYUtility.podspec; sourceTree = "<group>"; };
+		50557DAD5E8D6936A0131084 /* XYUtility.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XYUtility.podspec; path = ../XYUtility.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XYUtility_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYUtility_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,7 +193,6 @@
 				84249C67402F282AA47B72CF /* Pods-XYUtility_Tests.debug.xcconfig */,
 				39654B88C11F604AABD65A14 /* Pods-XYUtility_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,7 +226,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				3237BAF0FA1C48198E5CB630 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = irobbin1024;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = ZE2KM4Q755;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -316,24 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3237BAF0FA1C48198E5CB630 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XYUtility_Tests/Pods-XYUtility_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XYUtility_Tests/Pods-XYUtility_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3708E65ACD8705DE40218ADB /* [CP] Check Pods Manifest.lock */ = {
@@ -513,6 +497,7 @@
 			baseConfigurationReference = 75BF9ACA5B5E85BA90D20E54 /* Pods-XYUtility_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZE2KM4Q755;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XYUtility/XYUtility-Prefix.pch";
 				INFOPLIST_FILE = "XYUtility/XYUtility-Info.plist";
@@ -529,6 +514,7 @@
 			baseConfigurationReference = E7ED515671EC0A84EFBE07CC /* Pods-XYUtility_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZE2KM4Q755;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XYUtility/XYUtility-Prefix.pch";
 				INFOPLIST_FILE = "XYUtility/XYUtility-Info.plist";
